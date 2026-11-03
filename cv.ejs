@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title><%= cv.name %></title>
+<link rel='stylesheet' href='/css/mystyle.css'>
+</head>
+<body>
+<h1><%= cv.name %></h1>
+<p><strong>Education:</strong> <%= cv.education %></p>
+<h2>Projects</h2>
+<ul>
+<% cv.projects.forEach(p => { %>
+<li><%= p %></li>
+<% }) %>
+</ul>
+</body>
+</html>
